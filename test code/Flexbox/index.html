@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Off Canvas Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul class="nav">
+                <li><a class="active" href="">Dashboard</a></li>
+                <li><a href="#">Charts</a></li>
+                <li><a href="#">Milestones</a></li>
+                <li><a href="#">Lab</a></li>
+                <li><a href="#">Preview</a></li>
+                <li><a href="#">Assets</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="content isOpen">
+            <a href="#" class="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <line x1="0" y1="20" x2="100" y2="20"></line>
+                    <line x1="0" y1="50" x2="100" y2="50"></line>
+                    <line x1="0" y1="80" x2="100" y2="80"></line>
+                </svg>
+            </a>
+            <h1>Flexbox Off Canvas Menu</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

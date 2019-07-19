@@ -1,0 +1,149 @@
+<html>
+
+<head>
+    <title>Navig Zone</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        p {
+            font-family: Verdana;
+            text-align: center;
+            padding: 10px;
+        }
+
+        p.ro {
+            font-family: Verdana;
+            color: red;
+            border: black;
+            border-style: dashed;
+            border-radius: 16px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('img/bg.jpg');
+        }
+
+        header {
+            background-color: black;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            border-radius: 16px;
+            background-image: url('img/bg5.jpg');
+            background-size: 100%;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 20px;
+            width: 30%;
+            height: 300px;
+            float: left;
+            border-radius: 16px;
+            background-image: url('img/bg8.jpg');
+            background-size: 300%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            height: 300px;
+            background-color: white;
+            text-align: center;
+            border-radius: 16px;
+            background-image: url('img/bg1.jpg');
+            background-size: 130%;
+        }
+
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 16px;
+            background-image: url('img/bg5.jpg');
+            background-size: 100%;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-10">
+
+                <header>
+                    <h1>♥ NAVIG ♥</h1>
+                </header>
+
+                <section>
+                    <nav>
+                        <ul>
+                            <p class="ro">
+                                <a id="nav1" href="#nav1">1</a>
+                            </p>
+                            <p class="ro">
+                                <a id="nav2" href="#nav2">2</a>
+                            </p>
+                            <p class="ro">
+                                <a href="#">3</a>
+                        </ul>
+                    </nav>
+
+                    <article>
+                        <div id="nav1">
+                            <img src="img/yeen.jpg" alt="auto" width="200px" height="260px"
+                                onclick="this.src='img/yeen1.jpg'" onmouseout="this.src='img/yeen.jpg'" />
+                        </div>
+                        <div id="nav2">
+                            ♥
+                        </div>
+                    </article>
+                </section>
+
+                <footer>
+                    <h4>Walongkorn Puangbanpan</h4>
+                </footer>
+
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100vh;
+}
+
+body {
+    padding: 5em;
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name {
+    color: white;
+    text-align: center;
+
+}
+
+.u-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.skill {
+    margin: 1em 0;
+    position: relative;
+    width: 22.5em;
+}
+
+.skill_type {
+    color: white;
+    font-weight: 300;
+    font-size: .8em;
+    letter-spacing: .145em;
+    text-transform: uppercase;
+    width: 5em;
+}
+
+.skill_outer-bar, .skill_inner-bar {
+    height: .75em;
+}
+
+.skill_outer-bar {
+    margin-top: 1em;
+    background: #333;
+}
+
+.skill_inner-bar {
+    animation: fillBar 1s forwards;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+
+.skill_inner-bar--100 {
+    width: 80%;
+    background: #F57D05;
+}
+.skill_inner-bar--90 {
+    width: 70%;
+    background: #29ADF3;
+}
+.skill_inner-bar--80 {
+    width: 60%;
+    background: #F2D512;
+}
+.skill_inner-bar--70 {
+    width: 50%;
+    background: #970FF5;
+}
+.skill_inner-bar--60 {
+    width: 50%;
+    background: #F147E2;
+}
+
+@keyframes fillBar {
+    to {
+        transform: scaleX(1);
+    }
+}
