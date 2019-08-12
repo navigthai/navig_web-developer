@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,700&display=swap');
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(164, 101, 223);
+    background-image: -webkit-linear-gradient(90deg,
+            transparent,
+            rgba(0, 0, 0, 0.4) 50%,
+            transparent,
+            transparent)
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(43, 42, 42);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    height: 70px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+ul.menu {
+    font-size: 1.3em;
+    height: 70px;
+    align-items: center;
+    list-style: none;
+    display: flex;
+}
+
+ul.menu li {
+    margin-right: 2em;
+}
+
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul.menu li:hover {
+    background: rgb(0, 0, 0);
+}
+
+ul.menu li:hover ul.submenu, ul.menu li:focus-within ul.submenu {
+    display: block;
+}
+
+.u-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.skill {
+    margin: 1em 0;
+    position: relative;
+    width: 22.5em;
+}
+
+.skill_type {
+    color: white;
+    font-weight: 300;
+    font-size: 1.5em;
+    letter-spacing: .145em;
+    text-transform: uppercase;
+    width: 5em;
+}
+
+.skill_outer-bar, .skill_inner-bar {
+    height: .75em;
+}
+
+.skill_outer-bar {
+    margin-top: 1em;
+    background: white;
+}
+
+.skill_inner-bar {
+    animation: fillBar 3s forwards;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+}
+
+.skill_inner-bar--100 {
+    width: 80%;
+    background: #F57D05;
+}
+.skill_inner-bar--90 {
+    width: 70%;
+    background: #29ADF3;
+}
+.skill_inner-bar--80 {
+    width: 60%;
+    background: #F2D512;
+}
+.skill_inner-bar--70 {
+    width: 50%;
+    background: #970FF5;
+}
+.skill_inner-bar--60 {
+    width: 50%;
+    background: #F147E2;
+}
+
+@keyframes fillBar {
+    to {
+        transform: scaleX(1);
+    }
+}
